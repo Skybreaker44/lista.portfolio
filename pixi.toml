@@ -1,0 +1,14 @@
+[workspace]
+authors = ["Brandon Lista <brandon.a.lista@gmail.com>"]
+channels = ["conda-forge"]
+name = "lista.portfolio"
+platforms = ["osx-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "<3.13"
+
+[pypi-dependencies]
+mkdocs-material = ">=9.7.6, <10"
