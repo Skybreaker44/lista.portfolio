@@ -7,8 +7,23 @@ version = "0.1.0"
 
 [tasks]
 
+[tasks.doc-build]
+cmd = "mkdocs build -f mkdocs.yml"
+inputs = ["docs"]
+outputs = ["site"]
+description = "Build documentation with mkdocs"
+
+[tasks.doc-serve]
+cmd = "mkdocs serve -f mkdocs.yml"
+depends-on = ["doc-build"]
+inputs = ["docs"]
+description = "Serve documentation with mkdocs, runs doc-build first"
+
+###################
+
 [dependencies]
 python = "<3.13"
 
 [pypi-dependencies]
 mkdocs-material = ">=9.7.6, <10"
+

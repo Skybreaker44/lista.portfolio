@@ -1,0 +1,12 @@
+site_name: Brandon Lista
+site_url: https://brandonlista.com
+theme:
+  name: material
+
+extra:
+  homepage: https://brandonlista.com/home
+
+nav:
+  - Home: index.md
+  - Bio: Bio/index.md
+  - Events: Events/index.md
